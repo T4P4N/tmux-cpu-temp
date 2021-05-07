@@ -5,11 +5,20 @@ CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 source "$CURRENT_DIR/scripts/helpers.sh"
 
 temp_interpolation=(
+	# funtction name "\#{temp_color_bg}"
+	"\#{batt_percentage}"
 	"\#{temp_status}"
-)
+	"\#{charge_icon}"
+	"\#{charge_emoji}"
+	)
 
 temp_commands=(
+# script name liek this:
+# "#($CURRENT_DIR/scripts/temp_color.sh bg)"
+	"#($CURRENT_DIR/scripts/batt_percentage.sh)"
 	"#($CURRENT_DIR/scripts/temp_status.sh)"
+	"#($CURRENT_DIR/scripts/charge_icon.sh)"
+	"#($CURRENT_DIR/scripts/charge_emoji.sh)"
 	)
 
 set_tmux_option() {

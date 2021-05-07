@@ -1,5 +1,0 @@
-#!/data/data/com.termux/files/usr/bin/bash
-# A simple plugin to show current
-# cpu temp in tmux status-bar
-# remove decimal & zero after that using grep
-# done boi!!!!!!!!!!!!!!!!!!!!!!!!
