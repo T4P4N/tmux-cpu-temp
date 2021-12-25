@@ -10,6 +10,7 @@ temp_interpolation=(
 	"\#{temp_status}"
 	"\#{charge_icon}"
 	"\#{charge_emoji}"
+	"\#{aqi_10}"
 	)
 
 temp_commands=(
@@ -19,6 +20,7 @@ temp_commands=(
 	"#($CURRENT_DIR/scripts/temp_status.sh)"
 	"#($CURRENT_DIR/scripts/charge_icon.sh)"
 	"#($CURRENT_DIR/scripts/charge_emoji.sh)"
+	"#($CURRENT_DIR/scripts/aqi_10.sh)"
 	)
 
 set_tmux_option() {
